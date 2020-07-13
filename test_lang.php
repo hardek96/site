@@ -1,4 +1,4 @@
 <?php 
-$output = shell_exec('ls'); 
 echo "Coucou"; 
+echo file_get_contents("index.php");
 ?>
